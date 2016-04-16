@@ -6,4 +6,4 @@ RUN echo "Hi, I am fengyao.me, I am in your container" \
     > /usr/share/nginx/html/index.html
 EXPOSE 80
 
-CMD ["nginx -g 'daemon off;'"]
+ENTRYPOINT ["/usr/sbin/nginx", "-g", "daemon off;"]
