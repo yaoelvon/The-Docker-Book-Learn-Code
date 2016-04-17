@@ -6,4 +6,6 @@ RUN echo "Hi, I am fengyao.me, I am in your container" \
     > /usr/share/nginx/html/index.html
 EXPOSE 80
 
+VOLUME ["/home/appdata"]
+
 ENTRYPOINT ["/usr/sbin/nginx", "-g", "daemon off;"]
